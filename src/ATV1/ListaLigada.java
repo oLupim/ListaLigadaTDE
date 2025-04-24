@@ -15,32 +15,6 @@ public class ListaLigada {
         this.inicio = novoNo;
     }
 
-    public void remover(int elemento) {
-        if (inicio == null) {
-            System.out.println("A lista está vazia.");
-            return;
-        }
-
-        if (inicio.elemento == elemento) {
-            inicio = inicio.proximo;
-            return;
-        }
-
-        No atual = inicio;
-        No anterior = null;
-
-        while (atual != null && atual.elemento != elemento) {
-            anterior = atual;
-            atual = atual.proximo;
-        }
-
-        if (atual == null) {
-            System.out.println("Elemento não encontrado.");
-            return;
-        }
-
-        anterior.proximo = atual.proximo;
-    }
 
     public void exibir() {
         if (inicio == null) {

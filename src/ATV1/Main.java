@@ -13,9 +13,5 @@ public class Main{
         System.out.println("Lista Ligada:");
         lista.exibir();
 
-        lista.remover(20);
-        System.out.println("Lista após remover 20:");
-        lista.exibir();
-
     }
 }
