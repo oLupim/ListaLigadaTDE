@@ -5,12 +5,12 @@ public class Main {
 
         ListaLigada lista = new ListaLigada();
 
-        lista.inserir(2);
-        lista.inserir(3);
+        lista.inserirFim(2);
+        lista.inserirFim(3);
         lista.exibir();
 
-        lista.inserir(4);
-        lista.inserir(5);
+        lista.inserirFim(4);
+        lista.inserirFim(5);
 
         System.out.println("Exibir Lista:");
         lista.exibir();

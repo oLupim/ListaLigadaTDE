@@ -9,7 +9,7 @@ public class ListaLigada {
     }
 
 
-    public void inserir(int elemento) {
+    public void inserirFim(int elemento) {
         No novoNo = new No(elemento);
         if (this.inicio == null) {
             this.inicio = novoNo;

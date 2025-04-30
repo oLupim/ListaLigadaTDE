@@ -15,26 +15,17 @@ public class ListaLigada {
 
     }
 
-
-    public void buscar(int elemento) {
-        if (inicio == null) {
-            System.out.println("A lista está vazia.");
-            return;
-        }
-
+    public boolean buscar(int elemento) {
         No atual = inicio;
-        No anterior = null;
 
-        while (atual != null && atual.elemento != elemento) {
-            anterior = atual;
+        while (atual != null) {
+            if (atual.elemento == elemento) {
+                return true;
+            }
             atual = atual.proximo;
         }
 
-        if (atual == null) {
-            System.out.println("Elemento não encontrado.");
-            return;
-        }
-
-        System.out.println("Elemento encontrado: " + atual.elemento);
+        return false;
     }
+
 }

@@ -5,10 +5,11 @@ public class Main {
 
         ListaLigada lista = new ListaLigada();
 
-        lista.inserir(5);
-        lista.inserir(6);
-        lista.inserir(7);
+        lista.inserir(10);
+        lista.inserir(20);
+        lista.inserir(30);
 
-        lista.buscar(6);
+        System.out.println(lista.buscar(20));
+        System.out.println(lista.buscar(40));
     }
 }
